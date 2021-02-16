@@ -28,24 +28,25 @@
   font-size: 1.4em;
   font-weight: 300;
   color: #222;
-  padding: 8px;
+  padding: 0;
   background: rgba(235,235,235,0.85);
   border-bottom: 1px solid rgba(0,0,0,0.1);
   text-align: center;
 }
 
 .content {
-
-    height: calc(100% - 80px);
-    margin: 8px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
     background: rgba(255,255,255,0.66);
-    border: 1px solid red;
 }
 
 .work-space {
-  flex-grow: 999;
-  overflow: auto;
-  margin: 0;
-  padding: 0;
+
+}
+
+.window {
+  display: inline-block;
+  border-width: 5px;
+  border-style: ridge;
+
 }

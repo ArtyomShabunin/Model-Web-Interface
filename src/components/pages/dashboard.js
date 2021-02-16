@@ -15,10 +15,8 @@ class Dashboard extends Component {
     return (
       <div className="app">
         <AppHeader />
-        <MetsoHeader/>
-        <TopToolbox />
         <FramesSpace />
-        <BottomToolbox />
+
       </div>
     )
   }
