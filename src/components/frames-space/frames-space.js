@@ -5,30 +5,33 @@ import {Canvas} from '../svg'
 import {CanvasTest} from '../svg'
 import {Frame1} from '../frames'
 import MetsoHeader from '../metso-header'
-import WindowHeader from '../window-header'
 
 import './frames-space.css'
 import '../../../node_modules/react-grid-layout/css/styles.css'
 import '../../../node_modules/react-resizable/css/styles.css'
+import '98.css'
 
 class FramesSpace extends Component {
   render() {
     return (
-      <div className='work-space'>
+      <div>
         <Draggable>
-          <div className='block button-block'>
-            <div className='title'>Hello!</div>
-            <div className='content'>
-              <button>Push</button>
+          <div style={{ width: '1210px' }} className="window">
+            <div className="title-bar">
+              <div className="title-bar-text">DNAuse A101/ЭБ-8/Control Panel</div>
+              <div className="title-bar-controls">
+                <button aria-label="Minimize" />
+                <button aria-label="Maximize" />
+                <button aria-label="Close" />
+              </div>
+            </div>
+            <div style={{ margin: '2px'}} className="window-body">
+              <MetsoHeader/>
             </div>
           </div>
         </Draggable>
-        <Draggable>
-          <div className='window'>
-              <WindowHeader/>
-              <MetsoHeader/>
-          </div>
-        </Draggable>
+
+
       </div>
     )
   }
