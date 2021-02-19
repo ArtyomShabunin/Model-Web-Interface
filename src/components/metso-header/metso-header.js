@@ -11,10 +11,10 @@ const MetsoHeader = () => {
         </div>
       </div>
 
-      <div className="container-fluid panel-front">
+      <div style={{ padding: 0 }} className="container-fluid">
         <div style={{ margin: 0 }} className="row">
 
-          <div style={{ padding: '2px'}} className="col vertical-align-coll">
+          <div style={{ padding: '2px'}} className="col">
 
             <div className="btn-pannel">
               <div style = {{ margin: 0 }} className="row">
@@ -45,8 +45,7 @@ const MetsoHeader = () => {
           </div>
 
           <div style={{ padding: 0}} className="col">
-            <div className="overview-videogramm">
-            </div>
+            <div style={{ 'background-color': 'blue', height: '100%' }}/>
           </div>
 
           <div style={{ 'padding-left': '60px', margin: '5px' }} className="col-7">

@@ -1,8 +1,6 @@
 .panel {
-
   height: 113px;
   width: 1200px;
-
   position: relative;
 }
 
@@ -24,18 +22,4 @@
   position: absolute;
   left: 43%;
   top: -10%;
-}
-
-.panel-front {
-  padding: 0;
-}
-
-.vertical-align-coll {
-  margin: auto;
-
-}
-
-.overview-videogramm {
-  background-color: blue;
-  height: 100%;
 }

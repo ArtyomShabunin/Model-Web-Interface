@@ -5,6 +5,7 @@ import {Canvas} from '../svg'
 import {CanvasTest} from '../svg'
 import {Frame1} from '../frames'
 import MetsoHeader from '../metso-header'
+import VideogramList from '../videogram-list'
 
 import './frames-space.css'
 import '../../../node_modules/react-grid-layout/css/styles.css'
@@ -27,6 +28,19 @@ class FramesSpace extends Component {
             </div>
             <div style={{ margin: '2px'}} className="window-body">
               <MetsoHeader/>
+            </div>
+          </div>
+        </Draggable>
+        <Draggable>
+          <div style={{ width: '350px' }} className="window">
+            <div className="title-bar">
+              <div className="title-bar-text">DNAuse A101/ЭБ-8</div>
+              <div className="title-bar-controls">
+                <button aria-label="Close" />
+              </div>
+            </div>
+            <div style={{ margin: '2px'}} className="window-body">
+              <VideogramList/>
             </div>
           </div>
         </Draggable>
