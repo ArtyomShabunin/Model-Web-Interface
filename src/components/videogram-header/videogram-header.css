@@ -1,0 +1,18 @@
+.background-videogram-header {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, #87a78b, #aec1b5);
+  position: absolute;
+  overflow: hidden;
+}
+
+.right-background-videogram-header {
+  height: 80px;
+  width: inherit;
+  background-color: white;
+  border-top-left-radius: 100px 100px;
+  border-bottom-left-radius: 100px 100px;
+  position: absolute;
+  left: 43%;
+  top: -10%;
+}

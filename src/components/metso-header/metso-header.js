@@ -7,8 +7,7 @@ const MetsoHeader = () => {
     <div className="panel">
 
       <div className="background">
-        <div className="right-background">
-        </div>
+        <div className="right-background"></div>
       </div>
 
       <div style={{ padding: 0 }} className="container-fluid">
