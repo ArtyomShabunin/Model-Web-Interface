@@ -5,22 +5,36 @@ import './videogram-list.css'
 const VideogramList = () => {
   return (
     <div>
-      <div style={{ 'margin-top': '5px' }} className="d-flex bd-highlight">
-        <span className="p-2 flex-fill bd-highlight">Обновить выбранную обрасть</span>
-        <button style={{ margin: '2px' }} className="flex-fill bd-highlight">Обновить</button>
-        <button style={{ 'min-width': '10px', width: '18px', margin: '2px', padding: '0px'}} className="bd-highlight">
-          <i style={{ 'margin-bottom': '7px' }} class="fa fa-sort-desc" aria-hidden="true"/>
+      <div style={{ 'margin-top': '5px' }} className="d-flex">
+        <span className="p-2 flex-fill">Обновить выбранную обрасть</span>
+        <button style={{ margin: '2px' }} className="flex-fill">
+          Обновить
+        </button>
+        <button style={{ 'min-width': '10px',
+                         width: '18px',
+                         margin: '2px',
+                         padding: '0px'}}>
+          <i style={{ 'margin-bottom': '7px' }}
+             class="fa fa-sort-desc"
+             aria-hidden="true"/>
         </button>
       </div>
 
-      <div style={{ 'margin-top': '5px' }} className="d-flex bd-highlight">
-        <span className="p-2 flex-fill bd-highlight">Открыть уровни</span>
-        <button style={{ 'min-width': '10px', margin: '2px' }} className="bd-highlight">1</button>
-        <button style={{ 'min-width': '10px', margin: '2px' }} className="bd-highlight">2</button>
-        <button style={{ 'min-width': '10px', margin: '2px' }} className="bd-highlight">3</button>
-        <button style={{ 'min-width': '10px', margin: '2px' }} className="bd-highlight">4</button>
-        <button style={{ 'min-width': '10px', margin: '2px', 'margin-left': '15px',  width: '28px', height: '28px', 'padding': '0 4px' }} className="bd-highlight">
-          <i style={{ 'font-size': '20px' }} class="fa fa-binoculars" aria-hidden="true"></i>
+      <div style={{ 'margin-top': '5px' }} className="d-flex">
+        <span className="p-2 flex-fill">Открыть уровни</span>
+        <button style={{ 'min-width': '10px', margin: '2px' }}>1</button>
+        <button style={{ 'min-width': '10px', margin: '2px' }}>2</button>
+        <button style={{ 'min-width': '10px', margin: '2px' }}>3</button>
+        <button style={{ 'min-width': '10px', margin: '2px' }}>4</button>
+        <button style={{ 'min-width': '10px',
+                         margin: '2px',
+                         'margin-left': '15px',
+                         width: '28px',
+                         height: '28px',
+                         'padding': '0 4px' }}>
+          <i style={{ 'font-size': '20px' }}
+             class="fa fa-binoculars"
+             aria-hidden="true"/>
         </button>
       </div>
 
@@ -34,18 +48,18 @@ const VideogramList = () => {
                        width: '60px' }}>
           Find picture
         </h2>
-        <div className="d-flex bd-highlight">
-          <div className="field-row flex-fill bd-highlight">
+        <div className="d-flex">
+          <div className="field-row flex-fill">
             <input style={{ width: 170 }} type="text" />
           </div>
-          <span className="p-2 flex-fill bd-highlight">8 ч {"{0/0?}"}</span>
-          <button style={{ 'min-width': '10px', width: '28px', height: '28px', 'padding': '0 4px', 'padding-bottom': '9px', margin: '2px' }} className="bd-highlight">
+          <span className="p-2 flex-fill">8 ч {"{0/0?}"}</span>
+          <button style={{ 'min-width': '10px', width: '28px', height: '28px', 'padding': '0 4px', 'padding-bottom': '9px', margin: '2px' }}>
             <i style={{ 'font-size': '20px' }} className="fa fa-sort-desc" aria-hidden="true"/>
           </button>
-          <button style={{ 'min-width': '10px', width: '28px', height: '28px', 'padding': '0 4px', 'padding-top': '9px', margin: '2px' }} className="bd-highlight">
+          <button style={{ 'min-width': '10px', width: '28px', height: '28px', 'padding': '0 4px', 'padding-top': '9px', margin: '2px' }}>
             <i style={{ 'font-size': '20px' }} className="fa fa-sort-asc" aria-hidden="true"/>
           </button>
-          <button style={{ 'min-width': '10px', width: '28px', height: '28px', 'padding': '0 4px', margin: '2px'}} className="bd-highlight">
+          <button style={{ 'min-width': '10px', width: '28px', height: '28px', 'padding': '0 4px', margin: '2px'}}>
             <i style={{ 'font-size': '20px' }} className="fa fa-times" aria-hidden="true"/>
           </button>
         </div>

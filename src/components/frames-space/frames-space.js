@@ -16,7 +16,7 @@ import '98.css'
 class FramesSpace extends Component {
   render() {
     return (
-      <div>
+      <div style={{ background: '#0078D7' }}>
         <Draggable>
           <div style={{ width: '1210px' }} className="window">
             <div className="title-bar">
