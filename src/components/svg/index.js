@@ -3,13 +3,14 @@ import Background from './background'
 import Pipe from './pipe'
 import Valve from './valve'
 import ElectrifiedValve from './electrified-valve'
-import CanvasTest from './canvas-test'
+import {TriangleBig, TriangleSmall} from './triangles'
 
 export {
   Canvas,
   Background,
   Pipe,
   Valve,
-  CanvasTest,
   ElectrifiedValve,
+  TriangleBig,
+  TriangleSmall,
 }

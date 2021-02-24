@@ -1,117 +1,42 @@
 import React from 'react'
-import Background from './background'
-import Pipe from './pipe'
-import ElectrifiedValve from './electrified-valve'
+import {Background, ElectrifiedValve, TriangleBig, TriangleSmall} from '../svg'
+import {viewBox,
+        superheater_style,
+        reheater_style,
+        fedwater_style,
+        equipment,
+        water_from_cond,
+        water_from_fwp_lp} from './constants'
 
-import './canvas-test.css'
+import './videogram.css'
 
-const CanvasTest = () => {
-  const viewBox = [0, 0, 1400, 900]
+const Triangle1 = () => {
+  return (<defs>
+            <marker id="superheater_style_triangle"
+                    viewBox="0 0 20 20"
+                    refX="10" refY="10"
+                    markerUnits="userSpaceOnUse"
+                    markerWidth="20" markerHeight="20"
+                    orient="auto">
+                <path d="M 0 0 L 20 10 L 0 20 z"
+                      fill={superheater_style.stroke}/>
+            </marker>
+          </defs>)
+}
 
-  // const viewBox = [-500, -500, 500, 0]
-
-  const superheater_style = {
-    fill: 'none',
-    stroke: '#ce00bd',
-    strokeWidth: '3px',
-  }
-
-  const reheater_style = {
-    fill: 'none',
-    stroke: '#ff41ce',
-    strokeWidth: '3px',
-  }
-
-  const fedwater_style = {
-    fill: 'none',
-    stroke: '#32a632',
-    strokeWidth: '3px',
-  }
-
-  const equipment = {
-    fill: 'none',
-    stroke: 'black',
-    strokeWidth: '1px',
-  }
-
-  const water_from_cond = {
-    fill: 'none',
-    stroke: '#009e73',
-    strokeWidth: '3px',
-  }
-
-  // Вода от промступени ПЭН
-  const water_from_fwp_lp = {
-    fill: 'none',
-    stroke: '#047304',
-    strokeWidth: '3px',
-  }
+const V80HAH00EN001 = () => {
 
   return (
     <svg
-      id="aliens-go-home-canvas"
+      id="80HAH00EN001"
       preserveAspectRatio="xMaxYMax none"
       viewBox={viewBox}>
 
-      <defs>
-          <marker id="fedwater_triangle"
-                  viewBox="0 0 10 10"
-                  refX="20" refY="5"
-                  markerUnits="userSpaceOnUse"
-                  markerWidth="10" markerHeight="10"
-                  orient="auto">
-              <path d="M 0 0 L 10 5 L 0 10 z"
-                    fill={fedwater_style.stroke}/>
-          </marker>
-      </defs>
-
-      <defs>
-          <marker id="water_from_fwp_lp_triangle"
-                  viewBox="0 0 10 10"
-                  refX="20" refY="5"
-                  markerUnits="userSpaceOnUse"
-                  markerWidth="10" markerHeight="10"
-                  orient="auto">
-              <path d="M 0 0 L 10 5 L 0 10 z"
-                    fill={water_from_fwp_lp.stroke}/>
-          </marker>
-      </defs>
-
-      <defs>
-          <marker id="water_from_cond_triangle"
-                  viewBox="0 0 10 10"
-                  refX="20" refY="5"
-                  markerUnits="userSpaceOnUse"
-                  markerWidth="10" markerHeight="10"
-                  orient="auto">
-              <path d="M 0 0 L 10 5 L 0 10 z"
-                    fill={water_from_cond.stroke}/>
-          </marker>
-      </defs>
-
-      <defs>
-          <marker id="reheater_style_triangle"
-                  viewBox="0 0 20 20"
-                  refX="10" refY="10"
-                  markerUnits="userSpaceOnUse"
-                  markerWidth="20" markerHeight="20"
-                  orient="auto">
-              <path d="M 0 0 L 20 10 L 0 20 z"
-                    fill={reheater_style.stroke}/>
-          </marker>
-      </defs>
-
-      <defs>
-          <marker id="superheater_style_triangle"
-                  viewBox="0 0 20 20"
-                  refX="10" refY="10"
-                  markerUnits="userSpaceOnUse"
-                  markerWidth="20" markerHeight="20"
-                  orient="auto">
-              <path d="M 0 0 L 20 10 L 0 20 z"
-                    fill={superheater_style.stroke}/>
-          </marker>
-      </defs>
+      <TriangleSmall id="fedwater_triangle" fill={fedwater_style.stroke} />
+      <TriangleSmall id="water_from_fwp_lp_triangle" fill={water_from_fwp_lp.stroke} />
+      <TriangleSmall id="water_from_cond_triangle" fill={water_from_cond.stroke} />
+      <TriangleBig id="reheater_style_triangle" fill={reheater_style.stroke} />
+      <TriangleBig id="superheater_style_triangle" fill={superheater_style.stroke} />
 
       <Background/>
       // Линии пароперегревателя
@@ -372,6 +297,6 @@ const CanvasTest = () => {
 
     </svg>
   );
-};
+}
 
-export default CanvasTest;
+export default V80HAH00EN001
