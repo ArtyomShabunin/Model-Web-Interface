@@ -3,7 +3,8 @@ import {Background, ElectrifiedValve, TriangleBig, TriangleSmall} from '../svg'
 import {viewBox,
         superheater_style,
         reheater_style,
-        fedwater_style,
+        fedwater_primary_style,
+        fedwater_secondary_style,
         equipment,
         water_from_cond,
         water_from_fwp_lp} from './constants'
@@ -32,7 +33,7 @@ const V80HAH00EN001 = () => {
       preserveAspectRatio="xMaxYMax none"
       viewBox={viewBox}>
 
-      <TriangleSmall id="fedwater_triangle" fill={fedwater_style.stroke} />
+      <TriangleSmall id="fedwater_triangle" fill={fedwater_secondary_style.stroke} />
       <TriangleSmall id="water_from_fwp_lp_triangle" fill={water_from_fwp_lp.stroke} />
       <TriangleSmall id="water_from_cond_triangle" fill={water_from_cond.stroke} />
       <TriangleBig id="reheater_style_triangle" fill={reheater_style.stroke} />
@@ -55,67 +56,68 @@ const V80HAH00EN001 = () => {
                 style={superheater_style}/>
       // Линии питательной воды
       <polyline points=" 315,790 315,820 335,820 255,820 265,820 265,830 250,835 260,840 250,845 265,850 265,860 255,860 335,860 315,860 315,890 685,890 685,820 657.5,820 657.5,760 970,760 970,855"
-                style={fedwater_style}/>
+                style={fedwater_primary_style}/>
       <polyline points=" 400,790 400,820 380,820 460,820 450,820 450,830 465,835 455,840 465,845 450,850 450,860 460,860 380,860 400,860 400,870 630,870 630,820 657.5,820"
-                style={fedwater_style}/>
+                style={fedwater_primary_style}/>
       <polyline points=" 820,760 820,855 1390,855"
-                style={fedwater_style}/>
+                style={fedwater_primary_style}/>
       <polyline points=" 740,805 657.5,805"
-                style={fedwater_style}/>
+                style={fedwater_secondary_style}/>
       <polyline points=" 1100,880 1020,880 1020,855"
-                style={fedwater_style}/>
+                style={fedwater_secondary_style}/>
+      // Питательная воды на пароохладители высокого давления
       <polyline points=" 1305,855 1305,785 1020,785 1020,700 690,700 690,160 435,160"
-                style={fedwater_style}
+                style={fedwater_secondary_style}
                 marker-end="url(#fedwater_triangle)"/>
       <polyline points=" 590,160 590,115 460,115 435,160"
-                style={fedwater_style}
+                style={fedwater_secondary_style}
                 marker-end="url(#fedwater_triangle)"/>
       <polyline points=" 680,160 680,80 440,80"
-                style={fedwater_style}/>
+                style={fedwater_secondary_style}/>
       <polyline points=" 430,80 285,80"
-                style={fedwater_style}/>
+                style={fedwater_secondary_style}/>
       <polyline points=" 275,80 45,80 45,160 280,160"
-                style={fedwater_style}
+                style={fedwater_secondary_style}
                 marker-end="url(#fedwater_triangle)"/>
       <polyline points=" 125,160 125,115 255,115 280,160"
-                style={fedwater_style}
+                style={fedwater_secondary_style}
                 marker-end="url(#fedwater_triangle)"/>
       <polyline points=" 690,630 440,630"
-                style={fedwater_style}/>
+                style={fedwater_secondary_style}/>
       <polyline points=" 645,630 645,585 460,585 435,555"
-                style={fedwater_style}
+                style={fedwater_secondary_style}
                 marker-end="url(#fedwater_triangle)"/>
       <polyline points=" 430,630 285,630"
-                style={fedwater_style}/>
+                style={fedwater_secondary_style}/>
       <polyline points=" 275,630 25,630 25,585 255,585 280,555"
-                style={fedwater_style}
+                style={fedwater_secondary_style}
                 marker-end="url(#fedwater_triangle)"/>
       // Питательная воды на пароохладители промежуточного пароперегревателя
       <polyline points=" 1365,855 1365,135 1340,135 1340,120 1130,120"
-                style={fedwater_style}
+                style={fedwater_secondary_style}
                 marker-end="url(#fedwater_triangle)"/>
       <polyline points=" 1340,135 1340,150 1135,150"
-                style={fedwater_style}/>
+                style={fedwater_secondary_style}/>
       <polyline points=" 1125,150 925,150"
-                style={fedwater_style}/>
+                style={fedwater_secondary_style}/>
       <polyline points=" 915,150 710,150 710,120 920,120"
-                style={fedwater_style}
+                style={fedwater_secondary_style}
                 marker-end="url(#fedwater_triangle)"/>
       <polyline points=" 1365,365 1155,365 1130,315"
-                style={fedwater_style}
+                style={fedwater_secondary_style}
                 marker-end="url(#fedwater_triangle)"/>
       <polyline points=" 1230,365 1230,315 1130,315"
-                style={fedwater_style}
+                style={fedwater_secondary_style}
                 marker-end="url(#fedwater_triangle)"/>
       <polyline points=" 1340,365 1340,390 1135,390"
-                style={fedwater_style}/>
+                style={fedwater_secondary_style}/>
       <polyline points=" 1125,390 925,390"
-                style={fedwater_style}/>
+                style={fedwater_secondary_style}/>
       <polyline points=" 915,390 710,390 710,365 895,365 920,315"
-                style={fedwater_style}
+                style={fedwater_secondary_style}
                 marker-end="url(#fedwater_triangle)"/>
       <polyline points=" 820,365 820,315 920,315"
-                style={fedwater_style}
+                style={fedwater_secondary_style}
                 marker-end="url(#fedwater_triangle)"/>
 
       // Линии пароперегревателя промежуточного перегрева
@@ -196,20 +198,20 @@ const V80HAH00EN001 = () => {
       // Пароохладители НД
       <circle cx="1130" cy="120"
               r="10"
-              stroke={fedwater_style.stroke}
-              stroke-width={fedwater_style.strokeWidth}
+              stroke={fedwater_primary_style.stroke}
+              stroke-width={fedwater_secondary_style.strokeWidth}
               fill="#e7dfde" />
 
       <circle cx="920" cy="120"
               r="10"
-              stroke={fedwater_style.stroke}
-              stroke-width={fedwater_style.strokeWidth}
+              stroke={fedwater_primary_style.stroke}
+              stroke-width={fedwater_secondary_style.strokeWidth}
               fill="#e7dfde" />
 
       <circle cx="1130" cy="315"
               r="10"
-              stroke={fedwater_style.stroke}
-              stroke-width={fedwater_style.strokeWidth}
+              stroke={fedwater_primary_style.stroke}
+              stroke-width={fedwater_secondary_style.strokeWidth}
               fill="#e7dfde" />
       <circle cx="1130" cy="315"
               r="5"
@@ -219,8 +221,8 @@ const V80HAH00EN001 = () => {
 
       <circle cx="920" cy="315"
               r="10"
-              stroke={fedwater_style.stroke}
-              stroke-width={fedwater_style.strokeWidth}
+              stroke={fedwater_primary_style.stroke}
+              stroke-width={fedwater_secondary_style.strokeWidth}
               fill="#e7dfde" />
       <circle cx="920" cy="315"
               r="5"
@@ -231,36 +233,36 @@ const V80HAH00EN001 = () => {
       // Пароохладители ВД
       <circle cx="435" cy="160"
               r="10"
-              stroke={fedwater_style.stroke}
-              stroke-width={fedwater_style.strokeWidth}
+              stroke={fedwater_primary_style.stroke}
+              stroke-width={fedwater_secondary_style.strokeWidth}
               fill="#e7dfde" />
       <circle cx="435" cy="160"
               r="5"
-              stroke={fedwater_style.stroke}
-              stroke-width={fedwater_style.strokeWidth}
+              stroke={fedwater_primary_style.stroke}
+              stroke-width={fedwater_secondary_style.strokeWidth}
               fill="#e7dfde" />
 
       <circle cx="280" cy="160"
               r="10"
-              stroke={fedwater_style.stroke}
-              stroke-width={fedwater_style.strokeWidth}
+              stroke={fedwater_primary_style.stroke}
+              stroke-width={fedwater_secondary_style.strokeWidth}
               fill="#e7dfde" />
       <circle cx="280" cy="160"
               r="5"
-              stroke={fedwater_style.stroke}
-              stroke-width={fedwater_style.strokeWidth}
+              stroke={fedwater_primary_style.stroke}
+              stroke-width={fedwater_secondary_style.strokeWidth}
               fill="#e7dfde" />
 
       <circle cx="435" cy="555"
               r="10"
-              stroke={fedwater_style.stroke}
-              stroke-width={fedwater_style.strokeWidth}
+              stroke={fedwater_primary_style.stroke}
+              stroke-width={fedwater_secondary_style.strokeWidth}
               fill="#e7dfde" />
 
       <circle cx="280" cy="555"
               r="10"
-              stroke={fedwater_style.stroke}
-              stroke-width={fedwater_style.strokeWidth}
+              stroke={fedwater_secondary_style.stroke}
+              stroke-width={fedwater_secondary_style.strokeWidth}
               fill="#e7dfde" />
 
       <circle cx="435" cy="425"

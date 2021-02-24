@@ -13,10 +13,23 @@ export const reheater_style = {
   strokeWidth: '3px',
 }
 
-export const fedwater_style = {
+export const fedwater_primary_style = {
+  fill: 'none',
+  stroke: '#32a632',
+  strokeWidth: '5px',
+}
+
+export const fedwater_secondary_style = {
   fill: 'none',
   stroke: '#32a632',
   strokeWidth: '3px',
+}
+
+export const fedwater_drain_style = {
+  fill: 'none',
+  stroke: '#32a632',
+  strokeWidth: '3px',
+  strokeDasharray: "13 5",
 }
 
 export const equipment = {
