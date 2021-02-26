@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Button } from 'reactstrap';
 
 import './model-list-item.css'
 
@@ -32,21 +33,25 @@ export default class ModelListItem extends Component {
             </div>
           </div>
           <div class="btn-group-vertical">
-            <button>
+            <Button outline color="primary"
+                    style={{'min-width': 0, 'box-shadow': 'none', padding: '0px 5px'}}>
               <i style={{ 'font-size': '20px' }}
                  className="fa fa-play-circle"
                  aria-hidden="true"/>
-            </button>
-            <button>
+            </Button>
+            <Button outline color="secondary"
+                    style={{'min-width': 0, 'box-shadow': 'none', padding: 0}}>
               <i style={{ 'font-size': '20px' }}
                  className="fa fa-cog"
                  aria-hidden="true"/>
-            </button>
-            <button onClick={this.showInfo}>
+            </Button>
+            <Button outline color="info"
+                    style={{'min-width': 0, 'box-shadow': 'none', padding: 0}}
+                    onClick={this.showInfo}>
               <i style={{ 'font-size': '20px' }}
                  className="fa fa-info-circle"
                  aria-hidden="true"/>
-            </button>
+            </Button>
           </div>
         </div>
         {this.state.showInfo ? <span>{description}</span> : null}

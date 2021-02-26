@@ -11,7 +11,6 @@ import {V80HAH00EN001, V80LAB00EN001} from '../videogram'
 import './frames-space.css'
 import '../../../node_modules/react-grid-layout/css/styles.css'
 import '../../../node_modules/react-resizable/css/styles.css'
-import '98.css'
 
 class FramesSpace extends Component {
   render() {

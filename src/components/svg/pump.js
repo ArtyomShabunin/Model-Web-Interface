@@ -1,25 +1,17 @@
 import React from 'react';
 
-const ElectrifiedValve= (props) => {
-
-  const background_style = {
-    fill: '#bacabd'
-  }
-
-  const left_style = {
-    fill: 'black',
-  }
-  const right_style = {
-    fill: 'black',
-  }
+const Pump= (props) => {
 
   const transform = `rotate(${props.rotation}, ${props.scale*32.5}, ${props.scale*32.5}) scale(${props.scale})`
   const id = props.id
 
+  const background_style = {
+    fill: '#3e80ff'
+  }
+
   return (
     <g>
       <defs>
-
         <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" stop-color="#656966"/>
           <stop offset="40%" stop-color="#a4a4a4"/>
@@ -32,12 +24,18 @@ const ElectrifiedValve= (props) => {
                 y="0"
                 width="65"
                 height="65"
-                style={background_style}
-                />
-          <polygon points="3 3, 21 21, 21 43, 3 61"
-                   style={{fill: 'url(#grad)'}}/>
-          <polygon points="62 3, 62 61, 44 43, 44 21"
-                   style={{fill: 'url(#grad)'}}/>
+                style={background_style} />
+          <circle cx="32.5"
+                  cy="32.5"
+                  r="29.5"
+                  style={{fill: '#e7dfde',
+                          stroke: 'black',
+                          strokeWidth: '3px'}}  />
+          <path d="M32.5 6 L 6 32.5 L 32.5 59"
+                style={{fill: 'none',
+                        stroke: 'black',
+                        strokeWidth: '3px'}} />
+
         </g>
       </defs>
       <use xlinkHref={`#${props.id}`} x={props.x-65*props.scale/2} y={props.y-65*props.scale/2}/>
@@ -45,4 +43,4 @@ const ElectrifiedValve= (props) => {
   )
 }
 
-export default ElectrifiedValve
+export default Pump

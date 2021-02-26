@@ -290,10 +290,10 @@ const V80HAH00EN001 = () => {
               fill="#e7dfde" />
 
       // РПК и задвижки перед РПК
-      <ElectrifiedValve id="80LAB40AA103" x={940-10} y={760-10} rotation={0} scale={20/65}/>
-      <ElectrifiedValve id="80LAB40AA002" x={860-10} y={760-10} rotation={0} scale={20/65}/>
-      <ElectrifiedValve id="80LAB40AA102" x={940-10} y={855-10} rotation={0} scale={20/65}/>
-      <ElectrifiedValve id="80LAB40AA001" x={860-10} y={855-10} rotation={0} scale={20/65}/>
+      <ElectrifiedValve id="80LAB40AA103" x={940} y={760} rotation={0} scale={20/65}/>
+      <ElectrifiedValve id="80LAB40AA002" x={860} y={760} rotation={0} scale={20/65}/>
+      <ElectrifiedValve id="80LAB40AA102" x={940} y={855} rotation={0} scale={20/65}/>
+      <ElectrifiedValve id="80LAB40AA001" x={860} y={855} rotation={0} scale={20/65}/>
 
 
 
