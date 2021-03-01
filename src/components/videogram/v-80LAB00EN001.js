@@ -19,7 +19,7 @@ const V80LAB00EN001 = () => {
   return (
     <svg
       id="80LAB00EN001"
-      preserveAspectRatio="xMaxYMax none"
+      preserveAspectRatio="xMaxYMax"
       viewBox={viewBox}>
 
       <TriangleBig id="fedwater_primary" fill={fedwater_secondary_style.stroke} />
@@ -58,7 +58,7 @@ const V80LAB00EN001 = () => {
       // Обессоленная вода
       <path d="M1325 325 V 775 H 1130 V 730"
             style={fedwater_secondary_style}
-            marker-start="url(#fedwater_primary)"/>
+            markerStart="url(#fedwater_primary)"/>
       <path d="M1325 345 H 1230"
             style={fedwater_secondary_style}/>
       <path d="M1220 345 H 1105 V 400"
@@ -69,7 +69,7 @@ const V80LAB00EN001 = () => {
             style={fedwater_secondary_style}/>
       <path d="M610 735 V 880 H 1205"
             style={fedwater_secondary_style}
-            marker-end="url(#fedwater_primary)"/>
+            markerEnd="url(#fedwater_primary)"/>
       <path d="M725 540 V 585 H 640 V 540"
             style={fedwater_secondary_style}/>
       // Отбор ПВ из промступени ПЭН-Б
@@ -80,7 +80,7 @@ const V80LAB00EN001 = () => {
       // Впрыск в РОУ
       <path d="M1125 880 V 820 H 1205"
             style={fedwater_secondary_style}
-            marker-end="url(#fedwater_primary)"/>
+            markerEnd="url(#fedwater_primary)"/>
 
       // Байпас напорной задвижки ПЭН-А
       <path d="M340 400 V 355 H 260 V 400"
@@ -92,7 +92,7 @@ const V80LAB00EN001 = () => {
       // ПВД
       <path d="M140 400 V 215 L 165 190 H 115 L 140 165 V 20"
             style={fedwater_primary_style}
-            marker-end="url(#fedwater_primary)"/>
+            markerEnd="url(#fedwater_primary)"/>
       <path d="M140 225 H 175 V 155 H 105 V 225 Z"
             style={equipment}/>
 
@@ -106,33 +106,33 @@ const V80LAB00EN001 = () => {
       // В коллектор опорожнения ПВД
       <path d="M365 400 V 450"
             style={fedwater_secondary_style}
-            marker-end="url(#fedwater_primary)"/>
+            markerEnd="url(#fedwater_primary)"/>
       <path d="M310 730 V 815"
             style={fedwater_secondary_style}
-            marker-end="url(#fedwater_primary)"/>
+            markerEnd="url(#fedwater_primary)"/>
 
       // Впрыск в БРОУ ВД
       <path d="M140 370 H 90"
             style={fedwater_secondary_style}
-            marker-end="url(#fedwater_primary)"/>
+            markerEnd="url(#fedwater_primary)"/>
       // На впрыски котла
       <path d="M140 70 H 260"
             style={fedwater_secondary_style}
-            marker-end="url(#fedwater_primary)"/>
+            markerEnd="url(#fedwater_primary)"/>
 
       // Дренаж на всасе ПЭН
       <path d="M1195 630 H 1275"
             style={fedwater_drain_style}
-            marker-end="url(#fedwater_primary)"/>
+            markerEnd="url(#fedwater_primary)"/>
 
       // Дренаж ПЭН-А
       <path d="M785 400 L 725 495 H 570"
             style={fedwater_drain_style}
-            marker-end="url(#fedwater_primary)"/>
+            markerEnd="url(#fedwater_primary)"/>
       // Дренаж ПЭН-Б
       <path d="M810 730 L 850 795 H 1005"
             style={fedwater_drain_style}
-            marker-end="url(#fedwater_primary)"/>
+            markerEnd="url(#fedwater_primary)"/>
 
       // Деаэратор
       // Контур

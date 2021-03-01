@@ -21,9 +21,9 @@ const ElectrifiedValve= (props) => {
       <defs>
 
         <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stop-color="#656966"/>
-          <stop offset="40%" stop-color="#a4a4a4"/>
-          <stop offset="100%" stop-color="black"/>
+          <stop offset="0%" stopColor="#656966"/>
+          <stop offset="40%" stopColor="#a4a4a4"/>
+          <stop offset="100%" stopColor="black"/>
         </linearGradient>
 
         <g id={props.id}

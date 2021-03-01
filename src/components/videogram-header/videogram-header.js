@@ -14,7 +14,7 @@ const VideogramHeader = () => {
                     zIndex: 1,
                     height: '100%' }}
            className="d-flex">
-        <span style={{ color: 'white', 'font-size': '15px'}}
+        <span style={{ color: 'white', fontSize: '15px'}}
               className="flex-fill">
           80LAB00EN001.Питательная вода.ПЭН-А,Б</span>
         <div style={{ height: '28px', width: '100px', border: '2px inset'}}>
@@ -22,107 +22,107 @@ const VideogramHeader = () => {
         </div>
         <div className="flex-fill">
           <div className="float-right">
-            <button style={{ 'min-width': '10px',
+            <button style={{ minWidth: '10px',
                              width: '28px',
                              height: '28px',
-                             'padding': '0 4px',
+                             padding: '0 4px',
                              margin: '2px' }}>
-              <i style={{ 'font-size': '20px' }}
+              <i style={{ fontSize: '20px' }}
                  className="fa fa-arrow-left"
                  aria-hidden="true"/>
             </button>
-            <button style={{ 'min-width': '10px',
+            <button style={{ minWidth: '10px',
                              width: '28px',
                              height: '28px',
-                             'padding': '0 4px',
+                             padding: '0 4px',
                              margin: '2px' }}>
-              <i style={{ 'font-size': '20px' }}
+              <i style={{ fontSize: '20px' }}
                  className="fa fa-arrow-right"
                  aria-hidden="true"/>
             </button>
-            <button style={{ 'min-width': '10px',
+            <button style={{ minWidth: '10px',
                              width: '28px',
                              height: '28px',
-                             'padding': '0 4px',
+                             padding: '0 4px',
                              margin: '2px' }}>
-              <i style={{ 'font-size': '20px' }}
+              <i style={{ fontSize: '20px' }}
                  className="fa fa-arrow-up"
                  aria-hidden="true"/>
             </button>
-            <button style={{ 'min-width': '10px',
+            <button style={{ minWidth: '10px',
                              width: '28px',
                              height: '28px',
-                             'padding': '0 4px',
+                             padding: '0 4px',
                              margin: '2px' }}>
-              <i style={{ 'font-size': '20px' }}
+              <i style={{ fontSize: '20px' }}
                  className="fa fa-arrow-down"
                  aria-hidden="true"/>
             </button>
-            <button style={{ 'min-width': '10px',
+            <button style={{ minWidth: '10px',
                              width: '28px',
                              height: '28px',
-                             'padding': '0 4px',
+                             padding: '0 4px',
                              margin: '2px',
                              position: 'relative' }}>
-              <i style={{ 'font-size': '15px',
+              <i style={{ fontSize: '15px',
                           position: 'absolute',
                           bottom: '14px',
                           left: '0px' }}
                  className="fa fa-long-arrow-left"
                  aria-hidden="true"/>
-              <i style={{ 'font-size': '20px' }}
+              <i style={{ fontSize: '20px' }}
                  className="fa fa-clock-o"
                  aria-hidden="true"/>
             </button>
-            <button style={{ 'min-width': '10px',
+            <button style={{ minWidth: '10px',
                              width: '28px',
                              height: '28px',
-                             'padding': '0 4px',
+                             padding: '0 4px',
                              margin: '2px',
                              position: 'relative'}}>
-              <i style={{ 'font-size': '15px',
+              <i style={{ fontSize: '15px',
                           position: 'absolute',
                           bottom: '14px',
                           right: '0px'}}
                  className="fa fa-long-arrow-right"
                  aria-hidden="true"/>
-              <i style={{ 'font-size': '20px' }}
+              <i style={{ fontSize: '20px' }}
                  className="fa fa-clock-o"
                  aria-hidden="true"/>
             </button>
-            <button style={{ 'min-width': '10px',
+            <button style={{ minWidth: '10px',
                              width: '28px',
                              height: '28px',
-                             'padding': '0 4px',
+                             padding: '0 4px',
                              margin: '2px' }}>
-              <i style={{ 'font-size': '20px' }}
+              <i style={{ fontSize: '20px' }}
                  className="fa fa-print"
                  aria-hidden="true"/>
             </button>
-            <button style={{ 'min-width': '10px',
+            <button style={{ minWidth: '10px',
                              width: '28px',
                              height: '28px',
-                             'padding': '0 4px',
+                             padding: '0 4px',
                              margin: '2px' }}>
-              <i style={{ 'font-size': '20px' }}
+              <i style={{ fontSize: '20px' }}
                  className="fa fa-camera-retro"
                  aria-hidden="true"/>
             </button>
-            <button style={{ 'min-width': '10px',
+            <button style={{ minWidth: '10px',
                              width: '28px',
                              height: '28px',
-                             'padding': '0 4px',
+                             padding: '0 4px',
                              margin: '2px' }}>
-              <i style={{ 'font-size': '20px' }}
+              <i style={{ fontSize: '20px' }}
                  className="fa fa-arrows-h"
                  aria-hidden="true"/>
             </button>
-            <button style={{ 'min-width': '10px',
+            <button style={{ minWidth: '10px',
                              width: '28px',
                              height: '28px',
-                             'padding': '0 4px',
+                             padding: '0 4px',
                              margin: '2px' }}>
-              <i style={{ 'font-size': '20px' }}
+              <i style={{ fontSize: '20px' }}
                  className="fa fa-search"
                  aria-hidden="true"/>
             </button>

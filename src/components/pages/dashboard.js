@@ -9,14 +9,14 @@ import MetsoHeader from '../metso-header'
 import './dashboard.css'
 
 class Dashboard extends Component {
-  render() {
 
+
+  render() {
 
     return (
       <div className="app">
         <AppHeader />
         <FramesSpace />
-
       </div>
     )
   }
