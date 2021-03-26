@@ -9,13 +9,16 @@ const ControlPage = () => {
       id: 1,
       name: 'Модель энергоблока',
       prototype: 'Энергоблоки №8 и 9 Черепетской ГРЭС',
-      description: 'Модель всего энергоблока 220 МВт'
+      description: 'Модель всего энергоблока 220 МВт',
+      name_in_db: 'boiler_model'
+
     },
     {
       id: 2,
       name: 'Модель котла',
       prototype: 'Энергоблоки №8 и 9 Черепетской ГРЭС',
-      description: 'Только котел'
+      description: 'Только котел',
+      name_in_db: '...'
     }
   ]
 

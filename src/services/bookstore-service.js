@@ -6,7 +6,7 @@ export default class BookstoreService {
           author: 'Писатель 1'},
         { id: 2,
           title: 'Книжка 2',
-          author: 'Писатель 2'  
+          author: 'Писатель 2'
          }
       ]
   }

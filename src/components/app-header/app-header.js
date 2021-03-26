@@ -1,9 +1,11 @@
 import React from 'react'
 import {Link} from "react-router-dom";
+import { ModelService } from '../../services'
 
 import './app-header.css'
 
 const AppHeader = () => {
+  const mymodel = new ModelService()
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <Link className="navbar-brand" to="/">ТЭС симулятор</Link>
@@ -38,6 +40,30 @@ const AppHeader = () => {
           </li>
         </ul>
       </div>
+
+      <div class="">
+        <button type="button"
+                class=""
+                onClick={()=>mymodel.stopModel()}>
+          <i class="fa fa-stop"></i>
+        </button>
+        <button type="button"
+                class=""
+                onClick={()=>mymodel.pauseModel()}>
+          <i class="fa fa-pause"></i>
+        </button>
+        <button type="button"
+                class=""
+                onClick={()=>mymodel.startModel()}>
+          <i class="fa fa-play"></i>
+        </button>
+        <button type="button"
+                class=""
+                onClick={async ()=>console.log(await mymodel.getData())}>
+          <i class="fa fa-forward"></i>
+        </button>
+      </div>
+
     </nav>
   )
 }
